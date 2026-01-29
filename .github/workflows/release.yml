@@ -9,18 +9,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
       - name: Run PackSquash
-        uses: ComunidadAylas/PackSquash-action@v3
+        uses: ComunidadAylas/PackSquash-action@v4
       - name: Download optimized pack
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: Optimized pack
       - name: Rename zip
         run: mv pack.zip ${{ github.event.repository.name }}.zip
       - name: Create release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           files: ${{ github.event.repository.name }}.zip
