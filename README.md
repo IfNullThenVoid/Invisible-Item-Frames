@@ -13,3 +13,5 @@ Invisible Item frames will stay visible until you put a item inside, so you don'
 Add a glass pane to a Item Frame or a Glow Item Frame to convert it to an invisible one
 
 ![](crafting.png)
+
+Updated to hopefully work with 1.21.11!
