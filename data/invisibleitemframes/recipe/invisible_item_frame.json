@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "item_frame"
-    },
-    {
-      "item": "glass_pane"
-    }
+    "minecraft:item_frame",
+    "minecraft:glass_pane"
   ],
   "result": {
     "id": "minecraft:item_frame",
